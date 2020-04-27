@@ -1,0 +1,155 @@
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    background-color: #f9fafc;
+}
+
+nav {
+    display: flex;
+    padding: 0 0.5em 0 0.5em;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav li {
+    list-style-type: none;
+    margin: 0.6em 0;
+    color: #69696a;
+}
+
+.link {
+    text-decoration: none;
+    color: #69696a;
+}
+
+a:visited {
+    color: #69696a;
+}
+
+#nav-title {
+    color: #000000;
+    text-transform: lowercase;
+    
+}
+
+button {
+    display: flex;
+    border: none;
+    border-radius: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5em;
+    margin: 0.6em 0 0 0;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+.content {
+    padding: 0 0.5em 0 0.5em;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.text {
+    border-left: solid #000000;
+    border-color: #69696a;
+    padding: 0 1.5em 0 1.5em;;
+    color: #69696a;
+}
+
+@media (min-width: 768px) {
+
+    nav {
+        display: flex;                            
+        justify-content: space-between;
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .nav li {
+        display: flex;
+        margin: 0.6em 1em 0 0;
+    }
+
+    .nav li:nth-of-type(1) {
+        flex-grow: 2;
+        
+    }
+
+    button {
+        width: auto;
+        margin: 0 1em 0 0;
+        padding: 0.6em 1em 0.6em 1em;
+        
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;    
+    }
+
+    .text {
+        width: 50%;
+    }
+
+    .scroll {
+        position: fixed;
+        bottom: 0.5em;
+        left: 50%
+         
+    }
+
+    .purple {
+        position: absolute;
+        margin: auto;
+        background-color: rgba(207, 130, 213, 0.6);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        top: 8em;
+        right: 1.5em; 
+        z-index: 2;   
+    }
+    
+    .orange {
+        position: absolute;
+        margin: auto;
+        background-color: rgba(247, 193, 162, 0.7);
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        top: 12.5em;
+        right: 1.5em;
+        z-index: 3;
+    }
+    
+    .pink {
+        position: absolute;
+        margin: auto;
+        background-color: rgba(247, 136, 167, 0.6);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        top: 7em;
+        right: 5em;
+        z-index: 1;
+    }
+} 
